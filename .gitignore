@@ -1,0 +1,19 @@
+# FOLDERS
+pomodoro-vue/
+pomodoro/
+shopping-list-components/
+shopping-list-jquery/
+shopping-list-vue/
+shopping-list/
+test/
+vue-cli/
+vue-component/
+vue-csp-compliant/
+vue-custom-directive/
+vue-dev-build/
+vue-npm/
+vue-plugin/
+vue-shopping-list-components/
+
+# FILES
+.DS_Store
