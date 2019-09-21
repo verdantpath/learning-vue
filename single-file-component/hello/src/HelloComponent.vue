@@ -1,5 +1,5 @@
-<template>
-  <h1>{{ msg }}</h1>
+<template lang="pug">
+  h1 {{ msg }}
 </template>
 
 <script>
@@ -11,3 +11,9 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+h1 {
+  color: rebeccapurple;
+}
+</style>
