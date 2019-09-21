@@ -6,14 +6,15 @@
 export default {
   data() {
     return {
-      msg: 'Hello!'
+      msg: 'Obdurate!'
     }
   }
 }
 </script>
 
-<style scoped>
-h1 {
-  color: rebeccapurple;
-}
+<style lang="sass" scoped>
+$red: red
+h1
+  color: $red
+
 </style>
