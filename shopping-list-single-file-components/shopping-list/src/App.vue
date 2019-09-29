@@ -25,7 +25,7 @@ export default {
     return {
       items: [{ text: 'Bananas', checked: true },
         { text: 'Apples', checked: false }],
-      title: "Shopping List"
+      title: 'Shopping List'
     }
   },
   methods: {
