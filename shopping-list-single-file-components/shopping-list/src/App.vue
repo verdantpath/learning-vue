@@ -1,5 +1,6 @@
 <template>
   <div id="app" class="container">
+    <h2>{{ title }}</h2>
     <add-item-component></add-item-component>
     <items-component></items-component>
     <div class="footer">
@@ -23,7 +24,8 @@ export default {
   data () {
     return {
       items: [{ text: 'Bananas', checked: true },
-        { text: 'Apples', checked: false }]
+        { text: 'Apples', checked: false }],
+      title: "Shopping List"
     }
   },
   methods: {
