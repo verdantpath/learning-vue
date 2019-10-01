@@ -9,7 +9,9 @@
 </template>
 
 <script>
-export default {}
+  export default {
+    props: ['item']
+  }
 </script>
 
 <style scoped>
