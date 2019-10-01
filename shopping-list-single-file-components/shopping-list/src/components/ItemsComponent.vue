@@ -1,11 +1,17 @@
 <template>
   <div>
-    items list
+    <item-component v-for="item in items" v-bind:item="item"></item-component>
   </div>
 </template>
 
 <script>
-export default {}
+import ItemComponent from './ItemComponent'
+export default {
+  components: {
+    ItemComponent
+  },
+  props: ['items']
+}
 </script>
 
 <style scoped>
