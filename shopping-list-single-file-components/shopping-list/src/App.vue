@@ -1,11 +1,11 @@
 <template>
   <div id="app" class="container">
     <h2>{{ title }}</h2>
-    <add-item-component></add-item-component>
-    <items-component></items-component>
+    <add-item-component v-on:add="addItem"></add-item-component>
+    <items-component :items="items"></items-component>
     <div class="footer">
       <hr />
-      <change-title-component></change-title-component>
+      <change-title-component v-model="title"></change-title-component>
     </div>
   </div>
 </template>
@@ -25,7 +25,7 @@ export default {
     return {
       items: [{ text: 'Bananas', checked: true },
         { text: 'Apples', checked: false }],
-      title: 'Shopping List'
+      title: 'Dick Cumming List'
     }
   },
   methods: {
