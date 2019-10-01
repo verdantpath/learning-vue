@@ -1,16 +1,32 @@
 <template>
   <div>
     <div class="input_group">
-      <input type="text" class="input form-control" placeholder="add shopping list item">
+      <input type="text" @keyup.enter="addItem" v-model="newItem" class="input form-control" placeholder="add shopping list item">
       <span class="input-group-btn">
-        <button class="btn btn-default" type="button">Add!</button>
+        <button @click="addItem" class="btn btn-default" type="button">Add!</button>
       </span>
     </div>
   </div>
 </template>
 
 <script>
-export default {}
+export default {
+  data: function () {
+    return {
+      newItem: ''
+    }
+  },
+  methods: {
+    addItem: function () {
+      var text
+      text = this.newItem.trim()
+      if (text) {
+        this.$emit('add', this.newItem)
+        this.newItem = ''
+      }
+    }
+  }
+}
 </script>
 
 <style scoped>
