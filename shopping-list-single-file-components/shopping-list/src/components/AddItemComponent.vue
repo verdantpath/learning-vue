@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="input_group">
+    <div class="input-group">
       <input type="text" @keyup.enter="addItem" v-model="newItem" class="input form-control" placeholder="add shopping list item">
       <span class="input-group-btn">
         <button @click="addItem" class="btn btn-default" type="button">Add!</button>
