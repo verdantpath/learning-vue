@@ -25,7 +25,7 @@ export default {
     return {
       items: [{ text: 'Bananas', checked: true },
         { text: 'Apples', checked: false }],
-      title: 'Dick Cumming List'
+      title: 'My Shopping List'
     }
   },
   methods: {
@@ -40,5 +40,12 @@ export default {
 </script>
 
 <style>
-
+  .container {
+    width: 40%;
+    margin: 20px auto 0px auto;
+  }
+  .footer {
+    font-size: 0.7em;
+    margin-top: 20vh;
+  }
 </style>
