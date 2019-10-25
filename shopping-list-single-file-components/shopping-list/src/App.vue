@@ -1,42 +1,44 @@
 <template>
   <div id="app" class="container">
-    <h2>{{ title }}</h2>
-    <add-item-component v-on:add="addItem"></add-item-component>
-    <items-component :items="items"></items-component>
-    <div class="footer">
-      <hr />
-      <change-title-component v-model="title"></change-title-component>
+    <ul class="nav nav-tabs" role="tablist">
+      <li role="presentation">
+        <a href="ID" aria-controls="ID" role="tab" data-toggle="tab">TITLE</a>
+      </li>
+    </ul>
+    <div class="tab-content">
+      <div class="tab-pane" role="tabpanel" id="ID">
+        SHOPPING LIST COMPONENT
+      </div>
     </div>
   </div>
 </template>
 
 <script>
-  import AddItemComponent from './components/AddItemComponent'
-  import ItemsComponent from './components/ItemsComponent'
-  import ChangeTitleComponent from './components/ChangeTitleComponent'
+import ShoppingListComponent from './components/ShoppingListComponent'
 
-  export default {
-    components: {
-      AddItemComponent,
-      ItemsComponent,
-      ChangeTitleComponent
-    },
-    data () {
-      return {
-        items: [{ text: 'Bananas', checked: true },
-          { text: 'Apples', checked: false }],
-        title: 'My Shopping List'
-      }
-    },
-    methods: {
-      addItem (text) {
-        this.items.push({
-          text: text,
-          checked: false
-        })
-      }
+export default {
+  components: {
+    ShoppingListComponent
+  },
+  data () {
+    return {
+      shoppinglists: [
+        {
+          id: 'groceries',
+          title: 'Groceries',
+          items: [{ text: 'Bananas', checked: true },
+                  { text: 'Apples', checked: false }]
+        },
+        {
+          id: 'clothes',
+          title: 'Clothes',
+          items: [{ text: 'black dress', checked: false },
+                  { text: 'all stars', checked: false }]
+        }
+      ]
     }
   }
+}
 </script>
 
 <style>
