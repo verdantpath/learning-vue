@@ -2,7 +2,7 @@
   <div>
     <h2>{{ title }}</h2>
     <add-item-component></add-item-component>
-    <items-component :items="items"></items-component>
+    <items-component v-bind:items="items"></items-component>
     <div class="footer">
       <hr />
       <change-title-component></change-title-component>
@@ -25,7 +25,7 @@
   }
 </script>
 
-<style>
+<style scoped>
   .footer {
     font-size: 0.7em;
     margin-top: 20vh;
