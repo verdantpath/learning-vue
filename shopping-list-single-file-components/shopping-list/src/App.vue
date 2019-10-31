@@ -2,7 +2,8 @@
   <div id="app" class="container">
     <ul class="nav nav-tabs" role="tablist">
       <li v-bind:class= "index === 0 ? 'active' : ''" v-for="(list, index) in shoppinglists" role="presentation">
-        <a v-bind:href="'#' + list.id" v-bind:aria-controls="list.id" role="tab" data-toggle="tab">{{ list.title }}</a>
+        <!--<a v-bind:href="'#' + list.id" v-bind:aria-controls="list.id" role="tab" data-toggle="tab">{{ list.title }}</a>-->
+        <shopping-list-title-component :id="list.id" :title="list.title"></shopping-list-title-component>
       </li>
     </ul>
     <div class="tab-content">
@@ -15,6 +16,7 @@
 
 <script>
 import ShoppingListComponent from './components/ShoppingListComponent'
+import ShoppingListTitleComponent from './components/ShoppingListTitleComponent'
 
 export default {
   components: {
