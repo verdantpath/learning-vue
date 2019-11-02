@@ -8,7 +8,7 @@
     </ul>
     <div class="tab-content">
       <div v-bind:class= "index === 0 ? 'active' : ''" v-for="(list, index) in shoppinglists" class="tab-pane" role="tabpanel" v-bind:id="list.id">
-        <shopping-list-component v-bind:title="list.title" v-bind:items="list.items"></shopping-list-component>
+        <shopping-list-component :id="list.id" :title="list.title" :items="list.items"></shopping-list-component>
       </div>
     </div>
   </div>
