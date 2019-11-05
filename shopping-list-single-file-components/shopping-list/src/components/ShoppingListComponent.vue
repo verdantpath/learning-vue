@@ -28,6 +28,9 @@
                 text: text,
                 checked: false
             })
+        },
+        onChangeTitle (text) {
+            this.$emit('changeTitle', this.id, text)
         }
     }
   }
