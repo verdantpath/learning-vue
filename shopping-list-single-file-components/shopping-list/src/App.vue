@@ -39,6 +39,11 @@ export default {
         }
       ]
     }
+  },
+  methods: {
+    onChangeTitle (id, text) {
+      _.findWhere(this.shoppinglists, { id: id }).title = text
+    }
   }
 }
 </script>
