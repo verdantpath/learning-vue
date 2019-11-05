@@ -21,7 +21,7 @@
       ItemsComponent,
       ChangeTitleComponent
     },
-    props: ['title', 'items'],
+    props: ['id', 'title', 'items'],
     methods: {
         addItem (text) {
             this.items.push({
