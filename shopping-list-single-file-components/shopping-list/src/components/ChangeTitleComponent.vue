@@ -10,7 +10,7 @@ export default {
   props: ['value', 'title'],
   methods: {
     onInput (event) {
-      this.$emit('input', event.target.value)
+      this.$emit('changeTitle', event.target.value)
     }
   }
 }
