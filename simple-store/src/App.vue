@@ -7,7 +7,19 @@
 
 <script>
   import ShowGreetingsComponent from './components/ShowGreetingsComponent.vue'
-  import ChangeGreetingsComponent from './component/ChangeGreetingsComponent.vue'
+  import ChangeGreetingsComponent from './components/ChangeGreetingsComponent.vue'
+
+  export default {
+    components: { 
+      ShowGreetingsComponent,
+      ChangeGreetingsComponent
+    }, 
+    data () {
+      return {
+        msg: 'Hello Vue!'
+      }
+    }
+  }
 </script>
 
 <style>
