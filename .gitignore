@@ -21,4 +21,5 @@ vue-shopping-list-components/
 # FILES
 .DS_Store
 package-lock.json
+shopping-list-single-file-components/shopping-list/package.json
 shopping-list-single-file-components/shopping-list/package-lock.json
