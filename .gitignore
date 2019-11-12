@@ -4,6 +4,7 @@ pomodoro-vue/
 pomodoro/
 shopping-list-components/
 shopping-list-jquery/
+shopping-list-single-file-components/shopping-list/package-lock.json
 shopping-list-single-file-components/test-shopping-list
 shopping-list-vue/
 shopping-list/
