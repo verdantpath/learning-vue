@@ -7,7 +7,7 @@
         // props: ['msg'],
         computed: {
             msg () {
-                return this.$store.state.msg
+                return this.$store.getters.getMessage
             }
         },
         methods: {
