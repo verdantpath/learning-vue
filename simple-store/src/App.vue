@@ -1,7 +1,7 @@
 <template>
   <div>
-    <show-greetings-component :msg='msg'></show-greetings-component>
-    <change-greetings-component :msg='msg'></change-greetings-component>
+    <show-greetings-component></show-greetings-component>
+    <change-greetings-component></change-greetings-component>
   </div>
 </template>
 
