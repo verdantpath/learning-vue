@@ -3,12 +3,8 @@
 </template>
 
 <script>
+    import { mapGetters } from 'vuex'
     export default {
-        // props: ['msg'],
-        computed: {
-            msg () {
-                return this.$store.getters.getMessage 
-            }
-        }
+        computed: mapGetters(['getMessage'])
     }
 </script>

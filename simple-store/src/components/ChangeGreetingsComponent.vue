@@ -1,8 +1,9 @@
 <template>
-    <input :value="msg" @keyup='changeMsg'>
+    <input :value='getMessage' @keyup='changeMsg'>
 </template>
 
 <script>
+import { mapGetters } from 'vuex'
     export default {
         // props: ['msg'],
         computed: {
