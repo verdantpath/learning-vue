@@ -5,6 +5,8 @@
 <script>
     import { mapGetters } from 'vuex'
     export default {
-        computed: mapGetters(['getMessage'])
+        computed: mapGetters({
+            msg: 'getMessage'
+        })
     }
 </script>
