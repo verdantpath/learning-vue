@@ -5,12 +5,15 @@ import getters from './getters'
 Vue.use(Vuex)
 
 const state = {
-    msg: 'Hello Vue!'
+    message: 'Hello Vue!'
 }
 
 const mutations = {
     changeMessage(state, msg) {
-        state.msg = msg
+        state.message = msg
+    },
+    incrementCounter(state) {
+        state.counter ++
     }
 }
 
