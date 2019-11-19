@@ -11,7 +11,7 @@ import { mapGetters } from 'vuex'
         }),
         methods: {
             changeMsg (ev) {
-                this.$store.commit('changeMessage', ev.target.value)
+                this.$store.commit(CHANGE_MSG, ev.target.value)
             }
         }
     }
