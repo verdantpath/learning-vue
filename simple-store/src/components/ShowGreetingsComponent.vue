@@ -9,7 +9,8 @@
     import { mapGetters } from 'vuex'
     export default {
         computed: mapGetters({
-            msg: 'getMessage'
+            msg: 'getMessage',
+            counter: 'getCounter'
         })
     }
 </script>
