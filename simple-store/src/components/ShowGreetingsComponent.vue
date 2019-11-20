@@ -1,5 +1,8 @@
 <template>
-    <h1>{{ msg }}</h1>
+    <div>
+        <h1>{{ msg }}</h1>
+        <div>the message was changed {{ counter }} times</div>
+    </div>
 </template>
 
 <script>
