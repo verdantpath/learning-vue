@@ -6,7 +6,8 @@ import { CHANGE_MSG, INCREMENT_COUNTER } from './mutation_types'
 Vue.use(Vuex)
 
 const state = {
-    message: 'Hello Vue!'
+    message: 'Hello Vue!',
+    counter: 0
 }
 
 const mutations = {
