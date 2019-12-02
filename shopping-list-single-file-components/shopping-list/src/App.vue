@@ -19,6 +19,7 @@ import ShoppingListComponent from './components/ShoppingListComponent'
 import ShoppingListTitleComponent from './components/ShoppingListTitleComponent'
 import _ from 'underscore'
 import store from './vuex/store'
+import { mapGetters } from 'vuex'
 
 export default {
   store,
@@ -26,6 +27,9 @@ export default {
     ShoppingListComponent,
     ShoppingListTitleComponent
   },
+  computed: mapGetters({
+    shoppinglists: 'getLists'
+  }),
   methods: {
     onChangeTitle (id, text) {
       _.findWhere(this.shoppinglists, { id: id }).title = text
