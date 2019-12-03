@@ -5,7 +5,7 @@
     <items-component :items="items"></items-component>
     <div class="footer">
       <hr />
-      <change-title-component :title="title" @changeTitle="onChangeTitle"></change-title-component>
+      <change-title-component :title="title" :id="id" @changeTitle="onChangeTitle"></change-title-component>
     </div>
   </div>
 </template>
