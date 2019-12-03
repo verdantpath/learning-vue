@@ -6,8 +6,12 @@ pomodoro/
 shopping-list-components/
 shopping-list-jquery/
 shopping-list-single-file-components/test-shopping-list
+shopping-list-single-file-components/shopping-list/temp/
+shopping-list-single-file-components/shopping-list/test-src/
+shopping-list-single-file-components/shopping-list/test2-src/
+shopping-list-single-file-components/shopping-list/test3-src/
 shopping-list-vue/
-shopping-list/
+shopping-list
 test/
 vue-cli/
 vue-component/
