@@ -10,6 +10,10 @@ shopping-list-single-file-components/shopping-list/temp/
 shopping-list-single-file-components/shopping-list/test-src/
 shopping-list-single-file-components/shopping-list/test2-src/
 shopping-list-single-file-components/shopping-list/test3-src/
+shopping-list-single-file-components/broken-shopping-list/
+shopping-list-single-file-components/old-test-shopping-list/
+shopping-list-single-file-components/shopping-list2/
+shopping-list-single-file-components/shopping-list3/
 shopping-list-vue/
 shopping-list
 test/
