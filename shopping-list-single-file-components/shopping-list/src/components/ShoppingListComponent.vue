@@ -5,7 +5,7 @@
     <items-component :items="items"></items-component>
     <div class="footer">
       <hr />
-      <change-title-component :title="title" :id="id" @changeTitle="onChangeTitle"></change-title-component>
+      <change-title-component :title="title" :id="id"></change-title-component>
     </div>
   </div>
 </template>
@@ -23,15 +23,12 @@
     },
     props: ['id', 'title', 'items'],
     methods: {
-        addItem (text) {
-            this.items.push({
-                text: text,
-                checked: false
-            })
-        },
-        onChangeTitle (text) {
-            this.$emit('changeTitle', this.id, text)
-        }
+      addItem (text) {
+        this.items.push({
+          text: text,
+          checked: false
+        })
+      }
     }
   }
 </script>

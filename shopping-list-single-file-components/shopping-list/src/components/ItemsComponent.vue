@@ -1,11 +1,12 @@
 <template>
-  <div>
-    <item-component v-for="item in items" v-bind:item="item"></item-component>
-  </div>
+  <ul>
+    <item-component v-for="item in items" :item="item"></item-component>
+  </ul>
 </template>
 
 <script>
 import ItemComponent from './ItemComponent'
+
 export default {
   components: {
     ItemComponent

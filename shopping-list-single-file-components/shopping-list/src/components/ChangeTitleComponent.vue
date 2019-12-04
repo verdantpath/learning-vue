@@ -1,7 +1,7 @@
 <template>
   <div>
     <em>Change the title of your shopping list here</em>
-    <input :value="title" @input="onInput({ title: $event.target.vaule, id: id })"/>
+    <input :value="title" @input="onInput({ title: $event.target.value, id: id })"/>
   </div>
 </template>
 
@@ -9,7 +9,7 @@
 import { mapActions } from 'vuex'
 
 export default {
-  props: ['value', 'title', 'id'],
+  props: ['title', 'id'],
   methods: mapActions({
     onInput: 'changeTitle'
   })
