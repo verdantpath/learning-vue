@@ -5,6 +5,7 @@ pomodoro-vue/
 pomodoro/
 shopping-list-components/
 shopping-list-jquery/
+shopping-list-plugin
 shopping-list-single-file-components/test-shopping-list
 shopping-list-single-file-components/shopping-list/temp/
 shopping-list-single-file-components/shopping-list/test-src/
